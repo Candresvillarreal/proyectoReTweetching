@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CrearCuentaController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="246.0" layoutY="29.0" prefHeight="50.0" prefWidth="500.0" text="          ReTweetching - Crear Cuenta" textAlignment="JUSTIFY" textFill="#0071bc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonCancelar" layoutX="130.0" layoutY="463.0" mnemonicParsing="false" onAction="#cancelarCuenta" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: red;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonCrearCuenta" layoutX="650.0" layoutY="463.0" mnemonicParsing="false" onAction="#crearCuenta" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #0071bc;" text="Crear Cuenta" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutX="51.0" layoutY="84.0" opacity="0.0" prefHeight="5.0" prefWidth="567.0">
+         <effect>
+            <ColorInput paint="#176fe3" />
+         </effect>
+      </Separator>
+      <Separator layoutX="20.0" layoutY="85.0" prefHeight="5.0" prefWidth="914.0" />
+      <Separator layoutX="14.0" layoutY="426.0" prefHeight="5.0" prefWidth="914.0" />
+      <Label layoutX="21.0" layoutY="135.0" text="Nombre:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoNombre" layoutX="130.0" layoutY="120.0" onMouseEntered="#ayudaCampos" prefHeight="50.0" prefWidth="250.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="435.0" layoutY="135.0" prefHeight="17.0" prefWidth="122.0" text="Apellido:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoApellido" layoutX="650.0" layoutY="120.0" onMouseEntered="#ayudaCampos" prefHeight="50.0" prefWidth="250.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="21.0" layoutY="221.0" text="Contraseña:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TFpassword" layoutX="130.0" layoutY="206.0" prefHeight="50.0" prefWidth="250.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <PasswordField fx:id="campoPassword" layoutX="130.0" layoutY="206.0" onMouseEntered="#ayudaCampos" prefHeight="50.0" prefWidth="250.0">
+         <font>
+            <Font size="18.0" />
+         </font></PasswordField>
+      <Label layoutX="435.0" layoutY="221.0" prefHeight="27.0" prefWidth="200.0" text="Confirma Contraseña:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TFconfirmaPassword" layoutX="650.0" layoutY="206.0" prefHeight="50.0" prefWidth="250.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <PasswordField fx:id="campoConfirmaPassword" layoutX="650.0" layoutY="206.0" onMouseEntered="#ayudaCampos" prefHeight="50.0" prefWidth="250.0">
+         <font>
+            <Font size="18.0" />
+         </font></PasswordField>
+      <Label layoutX="20.0" layoutY="346.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoEmail" layoutX="130.0" layoutY="331.0" onMouseEntered="#ayudaCampos" prefHeight="50.0" prefWidth="250.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="435.0" layoutY="346.0" prefHeight="17.0" prefWidth="122.0" text="Usuario:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoUsuario" layoutX="650.0" layoutY="331.0" onMouseEntered="#ayudaCampos" prefHeight="50.0" prefWidth="250.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <CheckBox fx:id="verPassword" layoutX="20.0" layoutY="283.0" mnemonicParsing="false" onAction="#muestraPassword" text="Mostrar Contraseñas">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <Separator layoutX="14.0" layoutY="549.0" prefHeight="5.0" prefWidth="914.0" />
+      <Separator layoutX="188.0" layoutY="289.0" prefHeight="5.0" prefWidth="738.0" />
+      <ImageView fitHeight="50.0" fitWidth="51.0" layoutX="230.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Recursos/LogoPrueba500x500FondoGris.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

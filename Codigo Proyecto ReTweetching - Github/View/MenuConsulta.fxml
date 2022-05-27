@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuConsultaController">
+   <children>
+      <Label layoutX="307.0" layoutY="36.0" prefHeight="51.0" prefWidth="375.0" text="ReTweetching - Menú " textAlignment="CENTER" textFill="#0071bc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="56.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Recursos/LogoPrueba500x500FondoGris.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="campoBusqueda" layoutX="124.0" layoutY="120.0" prefHeight="50.0" prefWidth="755.0" promptText="Buscar">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Button fx:id="botonVerResultados" layoutX="126.0" layoutY="200.0" mnemonicParsing="false" onAction="#abrirResultados" prefHeight="50.0" prefWidth="755.0" style="-fx-background-color: #0071bc;" text="Ver Resultados" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonSalir" layoutX="126.0" layoutY="385.0" mnemonicParsing="false" onAction="#cerrarMenu" prefHeight="50.0" prefWidth="755.0" style="-fx-background-color: red;" text="Salir" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonAlmacenBusquedas" layoutX="126.0" layoutY="290.0" mnemonicParsing="false" onAction="#abrirAlmacenBusquedas" prefHeight="50.0" prefWidth="755.0" style="-fx-background-color: #36a420;" text="Almacén Búsquedas" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutX="101.0" layoutY="98.0" prefHeight="6.0" prefWidth="787.0" />
+      <Separator layoutX="101.0" layoutY="272.0" prefHeight="0.0" prefWidth="787.0" />
+      <Separator layoutX="101.0" layoutY="361.0" prefHeight="6.0" prefWidth="787.0" />
+      <Separator layoutX="101.0" layoutY="462.0" prefHeight="3.0" prefWidth="787.0" />
+   </children>
+</Pane>
